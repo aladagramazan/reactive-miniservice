@@ -1,6 +1,5 @@
 package com.rem.aggregator_service.customer_service.service;
 
-import com.rem.aggregator_service.customer_service.domain.TradeAction;
 import com.rem.aggregator_service.customer_service.dto.StockTradeRequest;
 import com.rem.aggregator_service.customer_service.dto.StockTradeResponse;
 import com.rem.aggregator_service.customer_service.entity.Customer;
@@ -27,8 +26,8 @@ public class TradeService {
     @Transactional
     public Mono<StockTradeResponse> trade(Integer customerId, StockTradeRequest request) {
         return switch (request.action()) {
-            case TradeAction.BUY -> this.buyStock(customerId, request);
-            case TradeAction.SELL -> this.sellStock(customerId, request);
+            case BUY -> this.buyStock(customerId, request);
+            case SELL -> this.sellStock(customerId, request);
         };
     }
 

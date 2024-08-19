@@ -5,6 +5,6 @@ public enum Ticker {
     AMAZON,
     APPLE,
     GOOGLE,
-    MICROSOFT;
+    MICROSOFT
 
 }

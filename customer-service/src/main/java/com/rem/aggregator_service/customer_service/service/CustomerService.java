@@ -6,7 +6,6 @@ import com.rem.aggregator_service.customer_service.exceptions.ApplicationExcepti
 import com.rem.aggregator_service.customer_service.mapper.EntityDtoMapper;
 import com.rem.aggregator_service.customer_service.repository.CustomerRepository;
 import com.rem.aggregator_service.customer_service.repository.PortfolioItemRepository;
-import com.rem.customer_service.dto.*;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
